@@ -103,10 +103,10 @@ export default function HomeScreen() {
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
       >
-        <View style={styles.header}>
+        <View  style={styles.header}>
           <View style={[styles.quoteContainer, { backgroundColor: theme.card }]}>
             <Text style={[styles.quote, { color: theme.text }]}>"{dailyQuote.quote}"</Text>
-            <Text style={[styles.quoteAuthor, { color: theme.secondaryText }]}>
+            <Text className='text-red-500 font-bold' >
               — {dailyQuote.author}
             </Text>
           </View>
@@ -177,11 +177,14 @@ const styles = StyleSheet.create({
   header: {
     padding: 24,
     paddingTop: 48,
+    backgroundColor: "rgba(18, 59, 135,1)",
   },
   greeting: {
     fontSize: 28,
     fontFamily: 'Poppins-700',
     marginBottom: 4,
+    backgroundColor: "rgba(17, 25, 40, 0.75)",
+    backdropFilter: "blur(5px)"
   },
   subtitle: {
     fontSize: 16,

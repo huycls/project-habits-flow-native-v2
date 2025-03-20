@@ -13,10 +13,10 @@ interface Theme {
 }
 
 export const lightTheme: Theme = {
-  background: '#FFFEFF',
+  background: '#fff',
   text: '#1F2937',
   secondaryText: '#6B7280',
-  card: 'rgba(157,206,255,0.3)',
+  card: 'rgba(222, 228, 233, 1)',
   border: '#E5E7EB',
   primary: '#6366F1',
   error: '#EF4444',
