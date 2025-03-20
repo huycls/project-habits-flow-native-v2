@@ -19,7 +19,7 @@ interface HabitsState {
   habits: Habit[];
   addHabit: (habit: Habit) => void;
   deleteHabit: (id: string) => void;
-  toggleHabit: (id: string) => void;
+  toggleHabit: (id: string, date: string) => void;
   loadHabits: () => Promise<void>;
 }
 
@@ -55,15 +55,15 @@ export const useHabits = create<HabitsState>((set, get) => ({
     });
   },
 
-  toggleHabit: (id) => {
+  toggleHabit: (id, date) => {
     set((state) => {
       const newHabits = state.habits.map(habit => {
         if (habit.id === id) {
           const isCompleted = !habit.completedToday;
-          const today = new Date().toISOString().split('T')[0];
+          const chosenDate = date.split('T')[0] || new Date().toISOString().split('T')[0];
           const completedDates = isCompleted 
-            ? [...habit.completedDates, today]
-            : habit.completedDates.filter(date => date !== today);
+            ? [...habit.completedDates, chosenDate]
+            : habit.completedDates.filter(date => date !== chosenDate);
 
           return {
             ...habit,

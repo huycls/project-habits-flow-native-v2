@@ -140,14 +140,14 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 28,
-    fontFamily: 'Inter-Bold',
+    fontFamily: 'Poppins-700',
     color: '#1F2937',
     textAlign: 'center',
     marginBottom: 12,
   },
   description: {
     fontSize: 16,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
     color: '#6B7280',
     textAlign: 'center',
     lineHeight: 24,
@@ -182,7 +182,7 @@ const styles = StyleSheet.create({
   },
   skipButtonText: {
     fontSize: 16,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
     color: '#6B7280',
   },
   nextButton: {
@@ -195,7 +195,7 @@ const styles = StyleSheet.create({
   },
   nextButtonText: {
     fontSize: 16,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
     color: '#fff',
     marginRight: 8,
   },

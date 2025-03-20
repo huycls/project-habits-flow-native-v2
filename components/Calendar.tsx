@@ -30,13 +30,16 @@ export function Calendar({ selectedDate, onSelectDate, completedDates, habits }:
   }).sort((a, b) => a.getTime() - b.getTime());
 
   const getDateProgress = (date: Date) => {
+    const formattedDate = date.toISOString().split('T')[0];
+
     const habitsForDate = habits.filter(habit => 
       habit.completedDates.some(d => isSameDay(d, date))
     );
     
     if (habitsForDate.length === 0) return 0;
+
     
-    const totalProgress = habitsForDate.reduce((sum, habit) => sum + habit.progress, 0);
+    const totalProgress = habitsForDate.reduce((sum, habit) => sum + 1, 0);
     return (totalProgress / habits.length) * 100;
   };
 

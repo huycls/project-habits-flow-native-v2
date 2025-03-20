@@ -330,7 +330,7 @@ const styles = StyleSheet.create({
   },
   loadingText: {
     fontSize: 16,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
   },
   header: {
     padding: 24,
@@ -338,7 +338,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 32,
-    fontFamily: 'Inter-Bold',
+    fontFamily: 'Poppins-700',
   },
   profile: {
     padding: 24,
@@ -357,12 +357,12 @@ const styles = StyleSheet.create({
   },
   profileName: {
     fontSize: 20,
-    fontFamily: 'Inter-SemiBold',
+    fontFamily: 'Poppins-600',
     marginBottom: 4,
   },
   profileEmail: {
     fontSize: 14,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
   },
   editProfileButton: {
     paddingHorizontal: 20,
@@ -371,7 +371,7 @@ const styles = StyleSheet.create({
   },
   editProfileButtonText: {
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
   },
   buttonPressed: {
     opacity: 0.8,
@@ -381,7 +381,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 16,
-    fontFamily: 'Inter-SemiBold',
+    fontFamily: 'Poppins-600',
     marginBottom: 16,
     textTransform: 'uppercase',
   },
@@ -410,11 +410,11 @@ const styles = StyleSheet.create({
   },
   settingsItemLabel: {
     fontSize: 16,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
   },
   settingsItemValue: {
     fontSize: 14,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
     marginTop: 2,
   },
   badge: {
@@ -425,7 +425,7 @@ const styles = StyleSheet.create({
   },
   badgeText: {
     fontSize: 12,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
   },
   logoutButton: {
     flexDirection: 'row',
@@ -441,12 +441,12 @@ const styles = StyleSheet.create({
   },
   logoutButtonText: {
     fontSize: 16,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
   },
   version: {
     textAlign: 'center',
     fontSize: 12,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
     marginBottom: 24,
   },
 });

@@ -210,13 +210,13 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 32,
-    fontFamily: 'Inter-Bold',
+    fontFamily: 'Poppins-700',
     color: '#1F2937',
     marginBottom: 8,
   },
   subtitle: {
     fontSize: 16,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
     color: '#6B7280',
     marginBottom: 32,
   },
@@ -228,7 +228,7 @@ const styles = StyleSheet.create({
   },
   errorText: {
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
     color: '#EF4444',
   },
   form: {
@@ -250,7 +250,7 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 48,
     fontSize: 16,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
     color: '#1F2937',
   },
   button: {
@@ -262,7 +262,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     fontSize: 16,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
     color: '#fff',
   },
   divider: {
@@ -277,7 +277,7 @@ const styles = StyleSheet.create({
   },
   dividerText: {
     fontSize: 14,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
     color: '#6B7280',
     marginHorizontal: 16,
   },
@@ -298,7 +298,7 @@ const styles = StyleSheet.create({
   },
   googleButtonText: {
     fontSize: 16,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
     color: '#1F2937',
   },
   footer: {
@@ -310,12 +310,12 @@ const styles = StyleSheet.create({
   },
   footerText: {
     fontSize: 14,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
     color: '#6B7280',
   },
   footerLink: {
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
     color: '#6366F1',
   },
 });

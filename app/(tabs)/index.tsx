@@ -60,7 +60,7 @@ export default function HomeScreen() {
 
   useEffect(() => {
     loadHabits();
-  }, []);
+  }, [selectedDate]);
 
   useEffect(() => {
     // Get today's date as a string
@@ -87,6 +87,15 @@ export default function HomeScreen() {
     habits.flatMap(habit => habit.completedDates.map(date => new Date(date)))
   )].sort((a, b) => b.getTime() - a.getTime());
 
+  const calendarHabits = habits.map(habit => ({
+    id: habit.id,
+    completedDates: habit.completedDates.map(date => new Date(date)),
+    progress: habit.progress || 0
+  }));
+
+  console.log(habits);
+  
+
   return (
     <View style={[styles.container, { backgroundColor: theme.background }]}>
       <ScrollView 
@@ -95,10 +104,6 @@ export default function HomeScreen() {
         showsVerticalScrollIndicator={false}
       >
         <View style={styles.header}>
-          <Text style={[styles.greeting, { color: theme.text }]}>Good morning!</Text>
-          <Text style={[styles.subtitle, { color: theme.secondaryText }]}>
-            Track your daily progress
-          </Text>
           <View style={[styles.quoteContainer, { backgroundColor: theme.card }]}>
             <Text style={[styles.quote, { color: theme.text }]}>"{dailyQuote.quote}"</Text>
             <Text style={[styles.quoteAuthor, { color: theme.secondaryText }]}>
@@ -111,11 +116,11 @@ export default function HomeScreen() {
           selectedDate={selectedDate}
           onSelectDate={setSelectedDate}
           completedDates={completedDates}
-          habits={habits}
+          habits={calendarHabits}
         />
 
         <View style={styles.habitsList}>
-          <View style={styles.habitsHeader}>
+          {/* <View style={styles.habitsHeader}>
             <Text style={[styles.habitsTitle, { color: theme.text }]}>
               Habits for {selectedDate.toLocaleDateString('en-US', { 
                 month: 'short',
@@ -133,13 +138,13 @@ export default function HomeScreen() {
               <Plus size={20} color="#fff" />
               <Text style={styles.addButtonText}>Add New</Text>
             </Pressable>
-          </View>
+          </View> */}
 
           {filteredHabits.map((habit) => (
             <HabitCard
               key={habit.id}
               {...habit}
-              onPress={() => toggleHabit(habit.id)}
+              onPress={() => toggleHabit(habit.id, selectedDate.toISOString())}              
               onDelete={() => deleteHabit(habit.id)}
             />
           ))}
@@ -159,7 +164,6 @@ export default function HomeScreen() {
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -176,12 +180,12 @@ const styles = StyleSheet.create({
   },
   greeting: {
     fontSize: 28,
-    fontFamily: 'Inter-Bold',
+    fontFamily: 'Poppins-700',
     marginBottom: 4,
   },
   subtitle: {
     fontSize: 16,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
     marginBottom: 16,
   },
   quoteContainer: {
@@ -191,13 +195,12 @@ const styles = StyleSheet.create({
   },
   quote: {
     fontSize: 16,
-    fontFamily: 'Inter-Medium',
-    fontStyle: 'italic',
+    fontFamily: 'Poppins-700',
     marginBottom: 8,
   },
   quoteAuthor: {
     fontSize: 14,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
     textAlign: 'right',
   },
   habitsList: {
@@ -211,7 +214,7 @@ const styles = StyleSheet.create({
   },
   habitsTitle: {
     fontSize: 20,
-    fontFamily: 'Inter-SemiBold',
+    fontFamily: 'Poppins-600',
   },
   addButton: {
     flexDirection: 'row',
@@ -227,7 +230,7 @@ const styles = StyleSheet.create({
   addButtonText: {
     color: '#fff',
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
   },
   emptyState: {
     padding: 24,
@@ -236,12 +239,12 @@ const styles = StyleSheet.create({
   },
   emptyStateText: {
     fontSize: 18,
-    fontFamily: 'Inter-SemiBold',
+    fontFamily: 'Poppins-600',
     marginBottom: 8,
   },
   emptyStateSubtext: {
     fontSize: 14,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
     textAlign: 'center',
   },
 });

@@ -246,12 +246,12 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 32,
-    fontFamily: 'Inter-Bold',
+    fontFamily: 'Poppins-700',
     marginBottom: 8,
   },
   subtitle: {
     fontSize: 16,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
     marginBottom: 32,
   },
   errorContainer: {
@@ -262,7 +262,7 @@ const styles = StyleSheet.create({
   },
   errorText: {
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
     color: '#EF4444',
   },
   form: {
@@ -282,7 +282,7 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 48,
     fontSize: 14,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
   },
   rememberMeRow: {
     flexDirection: 'row',
@@ -304,11 +304,11 @@ const styles = StyleSheet.create({
   },
   rememberMeText: {
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
   },
   forgotPassword: {
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
   },
   button: {
     height: 48,
@@ -318,7 +318,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     fontSize: 16,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
     color: '#fff',
   },
   divider: {
@@ -332,7 +332,7 @@ const styles = StyleSheet.create({
   },
   dividerText: {
     fontSize: 14,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
     marginHorizontal: 16,
   },
   googleButton: {
@@ -350,7 +350,7 @@ const styles = StyleSheet.create({
   },
   googleButtonText: {
     fontSize: 16,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
   },
   footer: {
     flexDirection: 'row',
@@ -361,10 +361,10 @@ const styles = StyleSheet.create({
   },
   footerText: {
     fontSize: 14,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
   },
   footerLink: {
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
   },
 });

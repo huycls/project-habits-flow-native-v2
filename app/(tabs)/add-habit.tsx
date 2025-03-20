@@ -9,7 +9,7 @@ import {
   Switch,
 } from 'react-native';
 import { router } from 'expo-router';
-import { ArrowLeft, Calendar, Clock, Target } from 'lucide-react-native';
+import { ArrowLeft,  Clock, Target } from 'lucide-react-native';
 import Animated, { FadeInDown } from 'react-native-reanimated';
 import { useSettingsStore } from '@/store/settings';
 import { useHabits } from '@/store/habits';
@@ -228,7 +228,7 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     fontSize: 18,
-    fontFamily: 'Inter-SemiBold',
+    fontFamily: 'Poppins-600',
   },
   saveButton: {
     paddingHorizontal: 16,
@@ -237,7 +237,7 @@ const styles = StyleSheet.create({
   },
   saveButtonText: {
     fontSize: 16,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
     color: '#fff',
   },
   buttonPressed: {
@@ -255,7 +255,7 @@ const styles = StyleSheet.create({
   },
   errorText: {
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
     color: '#EF4444',
   },
   section: {
@@ -263,7 +263,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 16,
-    fontFamily: 'Inter-SemiBold',
+    fontFamily: 'Poppins-600',
     marginBottom: 12,
   },
   inputContainer: {
@@ -275,7 +275,7 @@ const styles = StyleSheet.create({
     height: 48,
     paddingHorizontal: 16,
     fontSize: 16,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
   },
   frequencyContainer: {
     flexDirection: 'row',
@@ -291,7 +291,7 @@ const styles = StyleSheet.create({
   },
   frequencyText: {
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
   },
   reminderHeader: {
     flexDirection: 'row',
@@ -315,7 +315,7 @@ const styles = StyleSheet.create({
   },
   timeText: {
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
   },
   infoCard: {
     flexDirection: 'row',
@@ -327,7 +327,7 @@ const styles = StyleSheet.create({
   infoText: {
     flex: 1,
     fontSize: 14,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
     lineHeight: 20,
   },
 });

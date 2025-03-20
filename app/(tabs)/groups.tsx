@@ -315,12 +315,12 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 32,
-    fontFamily: 'Inter-Bold',
+    fontFamily: 'Poppins-700',
     marginBottom: 8,
   },
   subtitle: {
     fontSize: 16,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
   },
   searchContainer: {
     flexDirection: 'row',
@@ -334,7 +334,7 @@ const styles = StyleSheet.create({
     flex: 1,
     marginLeft: 12,
     fontSize: 16,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
   },
   createButton: {
     width: 40,
@@ -356,7 +356,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 20,
-    fontFamily: 'Inter-SemiBold',
+    fontFamily: 'Poppins-600',
   },
   seeAllButton: {
     flexDirection: 'row',
@@ -364,7 +364,7 @@ const styles = StyleSheet.create({
   },
   seeAllText: {
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
     marginRight: 4,
   },
   groupsList: {
@@ -391,7 +391,7 @@ const styles = StyleSheet.create({
   },
   groupName: {
     fontSize: 18,
-    fontFamily: 'Inter-SemiBold',
+    fontFamily: 'Poppins-600',
   },
   membersContainer: {
     flexDirection: 'row',
@@ -400,11 +400,11 @@ const styles = StyleSheet.create({
   },
   membersCount: {
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
   },
   groupDescription: {
     fontSize: 14,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
     marginBottom: 12,
   },
   challengeInfo: {
@@ -417,7 +417,7 @@ const styles = StyleSheet.create({
   challengeName: {
     flex: 1,
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
     marginRight: 8,
   },
   progressBar: {
@@ -432,7 +432,7 @@ const styles = StyleSheet.create({
   },
   progressText: {
     fontSize: 12,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
   },
   leaderboardCard: {
     margin: 24,
@@ -452,7 +452,7 @@ const styles = StyleSheet.create({
   },
   leaderboardTitleText: {
     fontSize: 18,
-    fontFamily: 'Inter-SemiBold',
+    fontFamily: 'Poppins-600',
   },
   leaderboardItem: {
     flexDirection: 'row',
@@ -465,7 +465,7 @@ const styles = StyleSheet.create({
   },
   rankText: {
     fontSize: 16,
-    fontFamily: 'Inter-SemiBold',
+    fontFamily: 'Poppins-600',
   },
   avatar: {
     width: 40,
@@ -478,12 +478,12 @@ const styles = StyleSheet.create({
   },
   userName: {
     fontSize: 16,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
     marginBottom: 2,
   },
   userStats: {
     fontSize: 12,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
   },
   challengesSection: {
     marginBottom: 24,
@@ -509,17 +509,17 @@ const styles = StyleSheet.create({
   },
   challengeTitle: {
     fontSize: 16,
-    fontFamily: 'Inter-SemiBold',
+    fontFamily: 'Poppins-600',
     marginBottom: 4,
   },
   challengeStats: {
     fontSize: 12,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
     marginBottom: 4,
   },
   challengePrize: {
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
   },
   joinButton: {
     width: 40,

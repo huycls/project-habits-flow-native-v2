@@ -152,13 +152,13 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 32,
-    fontFamily: 'Inter-Bold',
+    fontFamily: 'Poppins-700',
     color: '#1F2937',
     marginBottom: 8,
   },
   subtitle: {
     fontSize: 16,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
     color: '#6B7280',
     marginBottom: 32,
   },
@@ -170,7 +170,7 @@ const styles = StyleSheet.create({
   },
   errorText: {
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
     color: '#EF4444',
   },
   form: {
@@ -192,7 +192,7 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 48,
     fontSize: 16,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
     color: '#1F2937',
   },
   button: {
@@ -204,7 +204,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     fontSize: 16,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
     color: '#fff',
   },
   successContainer: {
@@ -216,13 +216,13 @@ const styles = StyleSheet.create({
   },
   successTitle: {
     fontSize: 24,
-    fontFamily: 'Inter-Bold',
+    fontFamily: 'Poppins-700',
     color: '#1F2937',
     marginBottom: 8,
   },
   successText: {
     fontSize: 16,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
     color: '#6B7280',
     textAlign: 'center',
     marginBottom: 32,

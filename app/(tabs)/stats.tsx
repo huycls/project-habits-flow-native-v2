@@ -230,7 +230,7 @@ export default function StatsScreen() {
               tickLabels: { 
                 fill: theme.secondaryText,
                 fontSize: 12,
-                fontFamily: 'Inter-Medium',
+                fontFamily: 'Poppins-500',
               },
             }}
           />
@@ -242,7 +242,7 @@ export default function StatsScreen() {
               tickLabels: { 
                 fill: theme.secondaryText,
                 fontSize: 12,
-                fontFamily: 'Inter-Medium',
+                fontFamily: 'Poppins-500',
               },
             }}
           />
@@ -279,7 +279,7 @@ export default function StatsScreen() {
               tickLabels: { 
                 fill: theme.secondaryText,
                 fontSize: 12,
-                fontFamily: 'Inter-Medium',
+                fontFamily: 'Poppins-500',
               },
             }}
           />
@@ -291,7 +291,7 @@ export default function StatsScreen() {
               tickLabels: { 
                 fill: theme.secondaryText,
                 fontSize: 12,
-                fontFamily: 'Inter-Medium',
+                fontFamily: 'Poppins-500',
               },
             }}
           />
@@ -326,7 +326,7 @@ export default function StatsScreen() {
               labels: {
                 fill: theme.text,
                 fontSize: 12,
-                fontFamily: 'Inter-Medium',
+                fontFamily: 'Poppins-500',
               },
             }}
           />
@@ -397,12 +397,12 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 32,
-    fontFamily: 'Inter-Bold',
+    fontFamily: 'Poppins-700',
     marginBottom: 8,
   },
   subtitle: {
     fontSize: 16,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
   },
   badgeCard: {
     margin: 24,
@@ -431,18 +431,18 @@ const styles = StyleSheet.create({
   },
   badgeTitle: {
     fontSize: 18,
-    fontFamily: 'Inter-SemiBold',
+    fontFamily: 'Poppins-600',
   },
   badgePoints: {
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
   },
   nextBadgeInfo: {
     marginTop: 16,
   },
   nextBadgeText: {
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
     marginBottom: 8,
   },
   badgeProgress: {
@@ -475,7 +475,7 @@ const styles = StyleSheet.create({
   },
   periodButtonText: {
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
   },
   chartCard: {
     borderRadius: 16,
@@ -490,7 +490,7 @@ const styles = StyleSheet.create({
   },
   chartTitle: {
     fontSize: 18,
-    fontFamily: 'Inter-SemiBold',
+    fontFamily: 'Poppins-600',
     marginBottom: 16,
   },
   pieChartContainer: {
@@ -501,7 +501,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 20,
-    fontFamily: 'Inter-Bold',
+    fontFamily: 'Poppins-700',
     marginBottom: 16,
   },
   achievementsList: {
@@ -536,15 +536,15 @@ const styles = StyleSheet.create({
   },
   achievementTitle: {
     fontSize: 16,
-    fontFamily: 'Inter-SemiBold',
+    fontFamily: 'Poppins-600',
   },
   achievementPoints: {
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
   },
   achievementDescription: {
     fontSize: 14,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
     marginBottom: 12,
   },
   progressBar: {
@@ -558,6 +558,6 @@ const styles = StyleSheet.create({
   },
   progressText: {
     fontSize: 12,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
   },
 });

@@ -1,7 +1,7 @@
 import { useEffect,useRef  } from 'react';
 import { Stack, Slot } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { useFonts, Inter_400Regular, Inter_500Medium, Inter_600SemiBold, Inter_700Bold } from '@expo-google-fonts/inter';
+import { useFonts,Poppins_400Regular,Poppins_500Medium,Poppins_600SemiBold,Poppins_700Bold } from '@expo-google-fonts/poppins';
 import { useFrameworkReady } from '@/hooks/useFrameworkReady';
 import { SplashScreen, router } from 'expo-router';
 import { useSettingsStore } from '@/store/settings';
@@ -16,10 +16,10 @@ export default function RootLayout() {
    const isLayoutMounted = useRef(false);
 
   const [fontsLoaded, fontError] = useFonts({
-    'Inter-Regular': Inter_400Regular,
-    'Inter-Medium': Inter_500Medium,
-    'Inter-SemiBold': Inter_600SemiBold,
-    'Inter-Bold': Inter_700Bold,
+    'Poppins-400': Poppins_400Regular,
+    'Poppins-500': Poppins_500Medium,
+    'Poppins-600': Poppins_600SemiBold,
+    'Poppins-700': Poppins_700Bold,
   });
 
   useEffect(() => {

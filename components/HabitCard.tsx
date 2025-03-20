@@ -66,7 +66,7 @@ export function HabitCard({
           )}
           
           <View style={styles.stats}>
-            <View style={styles.progressCircle}>
+            {/* <View style={styles.progressCircle}>
               <Circle
                 size={44}
                 color={theme.border}
@@ -84,7 +84,7 @@ export function HabitCard({
               <Text style={[styles.progressText, { color: theme.primary }]}>
                 {Math.round(progress * 100)}%
               </Text>
-            </View>
+            </View> */}
             
             <View style={styles.streakContainer}>
               <Text style={[styles.streakCount, { color: theme.text }]}>{streak}</Text>
@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 18,
-    fontFamily: 'Inter-SemiBold',
+    fontFamily: 'Poppins-600',
     flex: 1,
   },
   actions: {
@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
   },
   reminderText: {
     fontSize: 14,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
   },
   stats: {
     flexDirection: 'row',
@@ -173,17 +173,21 @@ const styles = StyleSheet.create({
   progressText: {
     position: 'absolute',
     fontSize: 12,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
   },
   streakContainer: {
     alignItems: 'flex-end',
+    display: 'flex',
+    flexDirection: 'row',
+    gap: 4,
   },
   streakCount: {
     fontSize: 24,
-    fontFamily: 'Inter-Bold',
+    fontFamily: 'Poppins-700',
   },
   streakLabel: {
     fontSize: 14,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Poppins-400',
+    marginBottom: 4
   },
 });

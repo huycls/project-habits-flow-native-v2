@@ -196,12 +196,12 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 28,
-    fontFamily: 'Inter-Bold',
+    fontFamily: 'Poppins-700',
     color: '#1F2937',
   },
   titleInput: {
     fontSize: 28,
-    fontFamily: 'Inter-Bold',
+    fontFamily: 'Poppins-700',
     color: '#1F2937',
     padding: 0,
   },
@@ -220,13 +220,13 @@ const styles = StyleSheet.create({
   },
   statValue: {
     fontSize: 24,
-    fontFamily: 'Inter-Bold',
+    fontFamily: 'Poppins-700',
     color: '#1F2937',
     marginBottom: 4,
   },
   statLabel: {
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
     color: '#6B7280',
   },
   section: {
@@ -236,7 +236,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 18,
-    fontFamily: 'Inter-SemiBold',
+    fontFamily: 'Poppins-600',
     color: '#1F2937',
     marginBottom: 16,
   },
@@ -250,7 +250,7 @@ const styles = StyleSheet.create({
   },
   scheduleText: {
     fontSize: 16,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
     color: '#4B5563',
   },
   reminderCard: {
@@ -271,7 +271,7 @@ const styles = StyleSheet.create({
   },
   reminderTime: {
     fontSize: 16,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
     color: '#4B5563',
   },
   daysList: {
@@ -293,7 +293,7 @@ const styles = StyleSheet.create({
   },
   dayChipText: {
     fontSize: 14,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
     color: '#6B7280',
   },
   dayChipTextSelected: {
@@ -316,7 +316,7 @@ const styles = StyleSheet.create({
   },
   deleteButtonText: {
     fontSize: 16,
-    fontFamily: 'Inter-Medium',
+    fontFamily: 'Poppins-500',
     color: '#EF4444',
   },
 });

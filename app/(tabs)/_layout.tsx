@@ -1,5 +1,5 @@
 import { Tabs } from 'expo-router';
-import { Chrome as Home, ChartBar as BarChart2, Users, Settings } from 'lucide-react-native';
+import { Chrome as Home, ChartBar as BarChart2, Users, Settings, DiamondPlus } from 'lucide-react-native';
 import { useSettingsStore } from '@/store/settings';
 
 export default function TabLayout() {
@@ -30,6 +30,12 @@ export default function TabLayout() {
           tabBarIcon: ({ size, color }) => <Users size={size} color={color} />,
         }}
       />
+       <Tabs.Screen
+        name="add-habit"
+        options={{
+          title: 'Add',
+          tabBarIcon: ({ size, color }) => <DiamondPlus size={size} color={color} />,
+        }} />
       <Tabs.Screen
         name="stats"
         options={{
